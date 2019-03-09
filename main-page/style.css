@@ -1,0 +1,8 @@
+#navigation-bar {
+    display: table;
+}
+
+li {
+    display: inline;
+    margin-left: 20px;
+}
