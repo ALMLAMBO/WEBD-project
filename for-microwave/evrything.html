@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../for-microwave/style.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600"
+          rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="../main-page/main-page.html">Начало</a></li>
+            <li><a href="#">Сандвичи<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li><a href="../sandwiches/everything.html">Всички</a></li>
+                    <li><a href="../sandwiches/with-meat.html">С месо</a></li>
+                    <li><a href="../sandwiches/without-meat.html">Без месо</a></li>
+                </ul>
+            </li>
+            <li><a href="#">За микровълнова<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li><a href="../for-microwave/evrything.html">Всички</a></li>
+                    <li><a href="../for-microwave/with-meat.html">С месо</a></li>
+                    <li><a href="../for-microwave/without-meat.html">Без месо</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Други<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li><a href="../others/evrything.html">Всички</a></li>
+                    <li><a href="../others/with-meat.html">С месо</a></li>
+                    <li><a href="../others/without-meat.html">Без месо</a></li>
+                </ul>
+            </li>
+            <li><a href="../contacts/contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+
+        $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+        });
+
+        $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+        });
+
+        $(window).resize(function() {
+            if($(window).width() > 768) {
+                $("ul").removeAttr('style');
+            }
+        });
+
+    </script>
+</body>
+</html>
