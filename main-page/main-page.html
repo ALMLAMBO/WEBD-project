@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src = "http://code.jquery.com/jquery-3.3.1.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../navigation-bar/style.css">
+    </head>
+    <body>
+        <nav class="nav-area">
+            <ul>
+                <li><a href="../main-page/main-page.html">Начало</a></li>
+                <li class="drop-down">
+                    <a href="../sandwiches/everything.html">Сандвичи</a>
+                    <ul>
+                        <li><a href="../sandwiches/everything.html">Всички</a></li>
+                        <li><a href="../sandwiches/with-meat.html">С месо</a></li>
+                        <li><a href="../sandwiches/without-meat.html">Без месо</a></li>
+                    </ul>
+                </li>
 
-</head>
-<body>
-    <p><a href="../recipe.html">Рецепта 1</a></p>
-    <p><a href="../recipe2.html">Рецепта 2</a></p>
-</body>
+                <li class="drop-down">
+                    <a href="../for-microwave/everything.html">За микровълнова</a>
+                    <ul class="drop-down">
+                        <li><a href="../for-microwave/everything.html">Всички</a></li>
+                        <li><a href="../for-microwave/with-meat.html">С месо</a></li>
+                        <li><a href="../for-microwave/without-meat.html">Без месо</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down">
+                    <a href="../others/everything.html">Други</a>
+                    <ul class="drop-down">
+                        <li><a href="../others/everything.html">Всички</a></li>
+                        <li><a href="../others/with-meat.html">С месо</a></li>
+                        <li><a href="../others/without-meat.html">Без месо</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contacts/contacts.html">Изпрати рецепта</a></li>
+            </ul>
+        </nav>
+    </body>
 </html>
