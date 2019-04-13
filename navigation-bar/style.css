@@ -1,83 +1,68 @@
-html {
-    font-family: Monotype Corsiva, serif;
+.nav-area {
+    font-family: "Monotype Corsiva", fantasy;
 }
 
-body {
+.nav-area ul {
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    background: #e3e3e3;
-    position: relative;
+.nav-area ul li {
+    width: 20%;
 }
 
-ul li {
-    display: inline-block;
+.nav-area ul li > ul {
+    display: none;
+    flex-direction: column;
 }
 
-ul li a {
-    color: #292929;
-    text-decoration: none;
+.nav-area ul li > ul li {
+    width: 100%;
+}
+
+.nav-area ul li:hover > ul {
+    display: flex;
+}
+
+.nav-area a {
+    text-transform: uppercase;
+    display: block;
+    background: #262626;
     padding: 15px;
-    display: block;
+    color: #fff;
+    text-align: center;
 }
 
-ul li:hover {
-    background: lightgrey;
+.nav-area a:hover {
+    background: #e84393;
+    color: #fff;
 }
 
-ul ul {
-    position: absolute;
-    min-width: 200px;
-    background: lightgrey;
-    display: none;
+.nav-area .drop-down li > a {
+    background: #000;
+    color: #fff;
+
 }
 
-ul ul li {
-    display: block;
-    background: #e3e3e3;
+.nav-area .drop-down li > a:hover {
+    background: #e84393;
+
 }
 
-ul li:hover ul {
-    display: block;
+.nav-area .drop-down > a:after {
+    content: '+';
+    padding-left: 5px;
 }
 
-ul li i {
-    color: #292929;
-    float: right;
-    padding-left: 20px;
-}
-
-nav div {
-    background: lightgrey;
-    color: #292929;
-    font-size: 24px;
-    padding: 0.6em;
-    cursor: pointer;
-    display: none;
-}
-
-@media(max-width: 768px) {
-    nav div {
-        display: block;
+@media (max-width: 600px) {
+    .nav-area ul li {
+        width: 100%;
     }
+}
 
-    ul {
-        display: none;
-        position: static;
-        background: #e3e3e3;
-    }
-
-    ul li {
-        display: block;
-    }
-
-    ul ul {
-        position: static;
-        background: #e3e3e3;
-    }
+:focus {
+    outline: 0;
 }
