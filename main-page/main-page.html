@@ -2,20 +2,367 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лесни рецепти за студенти</title>
+    <link rel="stylesheet" type="text/css" href="../main-page/style.css">
+    <link rel="stylesheet" type="text/css" href="../main-page/recipes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../main-page/script.js"></script>
 </head>
 <body>
-    <div>
+    <header id="home">
+        <div class="menu">
+            <span class="bar"></span>
+        </div>
 
-    </div>
+        <nav class="nav">
+            <div class="overlay">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main-text">
+            <h1>Welcome</h1>
+            <h2>Site for easy recipes for students</h2>
+            <a href="#" class="btn main-btn">Explore</a>
+
+        </div>
+    </header>
+
+    <section class="about-site" id="about">
+        <div class="container">
+            <h1 class="custom-font">Discover</h1>
+            <h2 class="custom-font-secondary">Our Site</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                At dolores ducimus est fuga ipsum iusto laborum, nihil nobis,
+                numquam pariatur praesentium ratione rem rerum, sapiente similique!
+                Commodi maxime nisi quo?
+            </p>
+            <a href="#" class="btn btn-info">Learn More</a>
+            <div class="store"></div>
+        </div>
+    </section>
+
+    <section class="fresh-ingredients between-sec">
+        <div class="container">
+            <h1 class="custom-font">Fresh</h1>
+            <h2 class="custom-font-secondary between-sec-color">Ingredients</h2>
+        </div>
+    </section>
+
+    <section class="our-recipes" id="recipes">
+        <div class="container">
+            <h1 class="custom-font">Discover</h1>
+            <h2 class="custom-font-secondary">Our Site</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                At dolores ducimus est fuga ipsum iusto laborum, nihil nobis,
+                numquam pariatur praesentium ratione rem rerum, sapiente similique!
+                Commodi maxime nisi quo?
+            </p>
+        </div>
+        <a href="#" class="btn btn-info">All recipes</a>
+        <table class="container">
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/for-microwave/with-meat/Guveche.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Гювече на микровълнова</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+                                <li>1 Глава кромид</li>
+                                <li>2 с. л. олио</li>
+                                <li>2 домата </li>
+                                <li>300 г сирене </li>
+                                <li>1 щипка чубрица</li>
+                                <li>5-6 зърна черен пипер</li>
+                                <li>кимион на вкус </li>
+                                <li>1/2 щафета шпек </li>
+                                <li>2-4 с. л. доматено пюре</li>
+                                <li>2 яйца</li>
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html" target="_blank">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/for-microwave/without-meat/kartofi%20s%20chasun.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Картофи с чесън</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/others/with-meat/spageti-s-gubi-i-bekon.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Спагети с гъби и бекон</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/others/without-meat/Omlet%20sirene.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Омлет със сирене</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/sandwiches/with-meat/Muzki_sandvich.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Мъжки сандвич</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/sandwiches/without-meat/Sandvich%20mozarela.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Сандвич с моцарела</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/sandwiches/without-meat/sandvich%20ribaton.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Сандвич с риба тон</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/beverages/lemonade.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Гювече на микровълнова</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="../images/for-microwave/with-meat/Guveche.jpg"
+                                 alt="" class="image">
+                        </div>
+                        <div class="details">
+                            <h2>Гювече на микровълнова</h2>
+                            <p>Необходими продукти:</p>
+                            <p>
+                            <ul>
+
+                            </ul>
+                            <p>
+                                Приготвяне:
+                            </p>
+                            <a href="../recipes/for-microwave/with-meat/recipe1.html">
+                                Прочетете повече...
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="image-group">
+
+        </div>
+
+    </section>
+
+    <section class="citrus-goodness between-sec">
+        <div class="container">
+            <h1 class="custom-font">Citrus</h1>
+            <h2 class="custom-font-secondary between-sec-color">Goodness</h2>
+        </div>
+    </section>
+
+    <section class="fresh-ingredients between-sec">
+        <div class="container">
+            <h1 class="custom-font">Fresh</h1>
+            <h2 class="custom-font-secondary between-sec-color">Ingredients</h2>
+        </div>
+    </section>
+
+    <section class="contact-us" id="contact">
+        <div class="container">
+            <h1 class="custom-font">Discover</h1>
+            <h2 class="custom-font-secondary">Our Site</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                At dolores ducimus est fuga ipsum iusto laborum, nihil nobis,
+                numquam pariatur praesentium ratione rem rerum, sapiente similique!
+                Commodi maxime nisi quo?
+            </p>
+
+            <form action="">
+                <label>
+                    <input type="text" name="name" class="input"
+                           placeholder="Full Name" required>
+                </label>
+
+                <label>
+                    <input type="email" name="name" class="input"
+                           placeholder="Email" required>
+                </label>
+
+                <label>
+                    <textarea name="message" class="text-area"
+                              placeholder="What can we help you with?" required></textarea>
+                </label>
+
+                <input type="submit" value="Send Email"
+                       class="input btn btn-submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="locations">
+            <h4>Locations</h4>
+            <div class="location">
+                <h5>500 Recipe Rd <br>
+                    Manhattan, NY - 11111
+                </h5>
+            </div>
+        </div>
+
+        <div class="hours">
+            <h4>Hours</h4>
+            <div class="days">
+                <h5>Monday - Saturday <br>
+                    10:30am - 8:00pm
+                </h5>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
