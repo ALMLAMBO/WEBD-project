@@ -1,3 +1,9 @@
-li {
-    width: 40%;
+.container-ingredients {
+    width: 500px;
+    float: left;
+}
+
+.container-preparation {
+    width: 500px;
+    float: right;
 }

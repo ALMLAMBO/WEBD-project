@@ -23,7 +23,8 @@ $(document).ready(function () {
         }
     });
 
-    $(".nav-item, a, .header-link, #back-to-top").click(function (link) {
+    $(".nav-item, .nav-item-link, .header-link, #back-to-top")
+        .click(function (link) {
         link.preventDefault();
         let target = $(this).attr('href');
 
@@ -45,26 +46,3 @@ $(document).ready(function () {
         }
     });
 });
-
-var showFullRecipeText = document
-    .getElementsByClassName("show-full-recipe-text");
-
-var showFullRecipeButton = document
-    .getElementsByClassName("show-full-recipe-button");
-
-var span = document
-    .getElementsByClassName("close");
-
-showFullRecipeButton.onclick = function () {
-    showFullRecipeText.style.display = "block";
-};
-
-span.onclick = function () {
-    showFullRecipeText.style.display = "none";
-};
-
-window.onclick = function (event) {
-    if(event.target === showFullRecipeText) {
-        showFullRecipeText.style.display = "none";
-    }
-};
