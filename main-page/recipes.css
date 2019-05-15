@@ -3,40 +3,43 @@ body {
     padding: 0;
 }
 
-.card {
+.details {
+    font-family: "Times New Roman", sans-serif;
+    color: #000;
+}
+
+.card:not(.contact-form) {
     position: relative;
-    margin: 20px 33%;
+    margin: 20px 0;
     width: 300px;
-    height: 400px;
+    height: 449px;
     transform-style: preserve-3d;
     transform: perspective(2000px);
     transition: 1s;
-    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.card:hover {
+.card:hover:not(.contact-form) {
     z-index: 1000;
     transform: perspective(2000px) rotate(-10deg);
-    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.card .imgBox {
+.card:not(.contact-form) .imgBox {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     transform-origin: left;
     z-index: 1;
     transition: 1s;
-
 }
 
-.card:hover .imgBox {
+.card:hover:not(.contact-form) .imgBox {
     transform: rotateY(-135deg);
-
 }
 
-.card .imgBox .image {
+.card:not(.contact-form) .imgBox .image {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,10 +48,11 @@ body {
     object-fit: cover;
 }
 
-.card .details {
+.card:not(.contact-form) .details {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     box-sizing: border-box;
     padding: 10px;
+    word-wrap: break-word;
 }
